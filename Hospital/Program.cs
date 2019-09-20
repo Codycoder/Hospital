@@ -6,7 +6,7 @@ namespace Hospital
     {
         static void Main(string[] args)
         {
-            List Lists = new List();
+            EmployeeList Lists = new EmployeeList();
             Lists.list();
         }
     }

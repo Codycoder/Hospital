@@ -10,5 +10,12 @@ namespace Hospital
         public int NumberID { get; set; }
         public int Salary { get; set; }
         public bool IfPaid { get; set; }
+
+        public virtual void EmployeeInfo()
+        {
+
+        }
     }
+
+
 }   

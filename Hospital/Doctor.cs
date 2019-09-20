@@ -15,7 +15,11 @@ namespace Hospital
             NumberID = 001;
             Salary = 90000;
             IfPaid = false;
-            Console.WriteLine(Name + " " + Specialty + " " + NumberID + " " + Salary + " " + IfPaid);
+            
+        }
+        public override void EmployeeInfo()
+        {
+            Console.WriteLine("Doctor: " + Name + "\n" + "Specialty: " + Specialty + "\n" + "ID Number: " + NumberID + "\n" + "Salary: $" + Salary + "\n" + "If Paid: " + IfPaid + "\n");
         }
     }
 }
