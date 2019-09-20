@@ -29,19 +29,24 @@ namespace Hospital
             switch (HospitalAdmin)
             {
                 case "1":
+                    Levels.Health--;
                     Console.WriteLine("Press 1 to pay employees or press 2 to not pay");
                     string PayEmployees = Console.ReadLine();
                     if (PayEmployees == "1")
                     {
                         Lists.EmployeePaid();
                         Console.Clear();
-                        Console.WriteLine("You have paid employees");
+                        Console.WriteLine("You paid your employees");
                         Console.ReadKey();
                     }
-                    else if(PayEmployees == "2")
+                    else if (PayEmployees == "2")
                     {
                         Console.WriteLine("You have not paid employees");
                         Console.ReadKey();
+                    }
+                    else
+                    {
+                        Console.WriteLine("You already paid employees");
                     }
                     break;
                 case "2":
@@ -55,19 +60,25 @@ namespace Hospital
                     {
                         Levels.Bloodlevel -= 1;
                         Levels.Health -= 1;
+                        Console.WriteLine("You have drawn blood!");
+                        Console.ReadKey();
                     }
                     else if (DoctorOrNurse == "2")
                     {
                         Levels.Bloodlevel -= 2;
                         Levels.Health -= 2;
+                        Console.WriteLine("You have drawn blood!");
+                        Console.ReadKey();
                     }
                     else
                     {
+                        Levels.Health--;
                         Console.WriteLine("You are not authorized for this action.");
                         Console.ReadKey();
                     }
                     break;
                 case "4":
+                    Levels.Health--;
                     Console.WriteLine("Patient health is: " + Levels.Health);
                     Console.ReadKey();
                     break;
@@ -78,19 +89,26 @@ namespace Hospital
                     {
                         Levels.Bloodlevel += 2;
                         Levels.Health += 2;
+                        Console.WriteLine("You have cared for your Patient!");
+                        Console.ReadKey();
                     }
                     else if (DoctorOrNurse2 == "2")
                     {
                         Levels.Bloodlevel += 1;
                         Levels.Health += 1;
+                        Console.WriteLine("You have cared for your Patient!");
+                        Console.ReadKey();
+
                     }
                     else
                     {
+                        Levels.Health--;
                         Console.WriteLine("You are not authorized for this action.");
                         Console.ReadKey();
                     }
                     break;
                 case "6":
+                    Levels.Health--;
                     Lists.PrintList();
                     Console.ReadKey();
                     break;

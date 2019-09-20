@@ -13,7 +13,7 @@ namespace Hospital
             Console.WriteLine("If you would like to start: Yes");
             Console.WriteLine("If you want to exit enter: No");
             string enter = Console.ReadLine().ToLower();
-            if (enter == "yes")
+            if (enter == "yes" || enter == "y")
             {
                 Console.Clear();
                 AllEmployees.Add(new Doctor());

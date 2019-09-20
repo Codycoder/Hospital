@@ -17,7 +17,7 @@ namespace Hospital
         }
         public virtual void EmployeePaid()
         {
-            IfPaid = true;
+
         }
     }
 
