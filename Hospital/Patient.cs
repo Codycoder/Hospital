@@ -9,7 +9,7 @@ namespace Hospital
         public int Bloodlevel { get; set; }
         public int Health { get; set; }
 
-        public void PatientHealthandBlood()
+        public Patient()
         {
             Bloodlevel = 20;
             Health = 10;

@@ -6,11 +6,10 @@ namespace Hospital
 {
     public class Janitor : Employee
     {
-        public bool SweepingOrNot { get; set; }
+        bool SweepingOrNot = true;
         public Janitor()
         {
             Name = "george";
-            SweepingOrNot = false;
             NumberID = 004;
             Salary = 40000;
             IfPaid = false;
@@ -18,7 +17,19 @@ namespace Hospital
         }
         public override void EmployeeInfo()
         {
-            Console.WriteLine("Janitor: " + Name + "\n" + "Sweeping or not: " + SweepingOrNot + "\n" + "ID Number: " + NumberID + "\n" + "Salary: $" + Salary + "\n" + "If Paid: " + IfPaid + "\n");
+            Console.WriteLine("Janitor: " + Name + "\n" +  "ID Number: " + NumberID + "\n" + "Salary: $" + Salary + "\n" + "If Paid: " + IfPaid);
+            Random rnd = new Random();
+            int SweepingOrNot1 = rnd.Next(1, 3);
+            switch (SweepingOrNot1)
+            {
+                case 1:
+                    SweepingOrNot = false;
+                    break;
+                case 2:
+                    SweepingOrNot = true;
+                    break;
+            }
+            Console.WriteLine("Sweeping or not: " + SweepingOrNot + "\n");
         }
         public override void EmployeePaid()
         {

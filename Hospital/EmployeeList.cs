@@ -10,9 +10,9 @@ namespace Hospital
         List<Employee> AllEmployees = new List<Employee>();
         public void AddToList()
         {
-            Console.WriteLine("If you would like to see employee info enter: Yes");
+            Console.WriteLine("If you would like to start: Yes");
             Console.WriteLine("If you want to exit enter: No");
-            string enter = Console.ReadLine();
+            string enter = Console.ReadLine().ToLower();
             if (enter == "yes")
             {
                 Console.Clear();
@@ -21,12 +21,15 @@ namespace Hospital
                 AllEmployees.Add(new Janitor());
                 AllEmployees.Add(new Receptionist());
             }
+            else
+            {
+                Environment.Exit(0);
+            }
         }
         public void EmployeePaid()
         {
             foreach (Employee employee in AllEmployees)
             {
-
                     AllEmployees[0].EmployeePaid();
                     AllEmployees[1].EmployeePaid();
                     AllEmployees[2].EmployeePaid();
@@ -41,5 +44,6 @@ namespace Hospital
                 employee.EmployeeInfo(); 
             }
         }
+
     }
 }

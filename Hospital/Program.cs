@@ -2,21 +2,17 @@
 
 namespace Hospital
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            EmployeeList Lists = new EmployeeList();
-            Lists.AddToList();
-            Lists.PrintList();
-            string p = Console.ReadLine();
-            if (p == "p")
+            MainMenu menu = new MainMenu();
+            bool loop = true;
+            menu.Start();
+            while (loop)
             {
-                Lists.EmployeePaid();
+                menu.Menu();
             }
-            Lists.PrintList();
-
-            Console.ReadKey();
         }
     }
 }
