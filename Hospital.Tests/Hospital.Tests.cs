@@ -5,16 +5,17 @@ namespace Hospital.Tests
 {
     public class UnitTest1
     {
+        
         [Fact]
         public void Doctor_Makes_Ninety_Thousand()
         {
             // Act
-            Employee doctor = new Employee();
+            Doctor doctor = new Doctor();
             doctor.Salary = 90000;
 
             //Arrange
 
-            doctor.Doctor();
+            doctor.Doctor1();
 
             //Assert
 
@@ -24,12 +25,12 @@ namespace Hospital.Tests
         public void Is_Doctor_Paid()
         {
             // Act
-            Employee doctor = new Employee();
+            Doctor doctor = new Doctor();
             doctor.IfPaid = false;
 
             //Arrange
 
-            doctor.Doctor();
+            doctor.Doctor1();
 
             //Assert
 
@@ -40,12 +41,12 @@ namespace Hospital.Tests
         {
     
             // Act
-            Employee nurse = new Employee();
+            Nurse nurse = new Nurse();
             nurse.NumberID = 002;
 
             //Arrange
 
-            nurse.Nurse();
+            nurse.Nurse1();
 
             //Assert
 

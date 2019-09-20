@@ -6,7 +6,8 @@ namespace Hospital
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List Lists = new List();
+            Lists.list();
         }
     }
 }
