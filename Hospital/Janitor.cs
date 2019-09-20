@@ -20,5 +20,10 @@ namespace Hospital
         {
             Console.WriteLine("Janitor: " + Name + "\n" + "Sweeping or not: " + SweepingOrNot + "\n" + "ID Number: " + NumberID + "\n" + "Salary: $" + Salary + "\n" + "If Paid: " + IfPaid + "\n");
         }
+        public override void EmployeePaid()
+        {
+            Console.WriteLine("You have paid your employee!");
+            IfPaid = true;
+        }
     }
 }

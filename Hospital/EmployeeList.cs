@@ -4,22 +4,41 @@ using System.Text;
 
 namespace Hospital
 {
-    class EmployeeList
+    public class EmployeeList
     {
-        public void list()
+        Employee Pay = new Employee();
+        List<Employee> AllEmployees = new List<Employee>();
+        public void AddToList()
         {
-
-            List<Employee> AllEmployees = new List<Employee>();
-            AllEmployees.Add(new Doctor());
-            AllEmployees.Add(new Nurse());
-            AllEmployees.Add(new Janitor());
-            AllEmployees.Add(new Receptionist());
-
-
-
+            Console.WriteLine("If you would like to see employee info enter: Yes");
+            Console.WriteLine("If you want to exit enter: No");
+            string enter = Console.ReadLine();
+            if (enter == "yes")
+            {
+                Console.Clear();
+                AllEmployees.Add(new Doctor());
+                AllEmployees.Add(new Nurse());
+                AllEmployees.Add(new Janitor());
+                AllEmployees.Add(new Receptionist());
+            }
+        }
+        public void EmployeePaid()
+        {
             foreach (Employee employee in AllEmployees)
             {
-                employee.EmployeeInfo();
+
+                    AllEmployees[0].EmployeePaid();
+                    AllEmployees[1].EmployeePaid();
+                    AllEmployees[2].EmployeePaid();
+                    AllEmployees[3].EmployeePaid();
+            }
+            
+        }
+        public void PrintList()
+        {
+            foreach (Employee employee in AllEmployees)
+            {
+                employee.EmployeeInfo(); 
             }
         }
     }

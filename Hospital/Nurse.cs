@@ -20,6 +20,11 @@ namespace Hospital
         {
             Console.WriteLine("Nurse: " + Name + "\n" + "Number of Patients: " + NumberofPatients + "\n" + "ID Number: " + NumberID + "\n" + "Salary: $" + Salary + "\n" + "If Paid: " + IfPaid + "\n");
         }
+        public override void EmployeePaid()
+        {
+            Console.WriteLine("You have paid your employee!");
+            IfPaid = true;
+        }
     }
 }
     

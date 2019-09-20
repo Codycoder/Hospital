@@ -6,53 +6,53 @@ namespace Hospital.Tests
     public class UnitTest1
     {
         
-        [Fact]
-        public void Doctor_Makes_Ninety_Thousand()
-        {
-            // Act
-            Doctor doctor = new Doctor();
-            doctor.Salary = 90000;
+        //[Fact]
+        //public void Doctor_Makes_Ninety_Thousand()
+        //{
+        //    // Act
+        //    Doctor doctor = new Doctor();
+        //    doctor.Salary = 90000;
 
-            //Arrange
+        //    //Arrange
 
-            doctor.Doctor1();
+        //    doctor.Doctor1();
 
-            //Assert
+        //    //Assert
 
-            Assert.Equal(90000, doctor.Salary);
-        }
-        [Fact]
-        public void Is_Doctor_Paid()
-        {
-            // Act
-            Doctor doctor = new Doctor();
-            doctor.IfPaid = false;
+        //    Assert.Equal(90000, doctor.Salary);
+        //}
+        //[Fact]
+        //public void Is_Doctor_Paid()
+        //{
+        //    // Act
+        //    Doctor doctor = new Doctor();
+        //    doctor.IfPaid = false;
 
-            //Arrange
+        //    //Arrange
 
-            doctor.Doctor1();
+        //    doctor.Doctor1();
 
-            //Assert
+        //    //Assert
 
-            Assert.False(false);
-        }
-        [Fact]
-        public void Is_NurseID_002()
-        {
+        //    Assert.False(false);
+        //}
+        //[Fact]
+        //public void Is_NurseID_002()
+        //{
     
-            // Act
-            Nurse nurse = new Nurse();
-            nurse.NumberID = 002;
+        //    // Act
+        //    Nurse nurse = new Nurse();
+        //    nurse.NumberID = 002;
 
-            //Arrange
+        //    //Arrange
 
-            nurse.Nurse1();
+        //    nurse.Nurse1();
 
-            //Assert
+        //    //Assert
 
-            Assert.Equal(002, nurse.NumberID);
+        //    Assert.Equal(002, nurse.NumberID);
 
-        }
+        //}
 
     }
 }

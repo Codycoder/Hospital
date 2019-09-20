@@ -13,7 +13,11 @@ namespace Hospital
 
         public virtual void EmployeeInfo()
         {
-
+           
+        }
+        public virtual void EmployeePaid()
+        {
+            IfPaid = true;
         }
     }
 
