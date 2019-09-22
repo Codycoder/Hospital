@@ -30,7 +30,7 @@ namespace Hospital
         {
             foreach (Employee employee in AllEmployees)
             {
-                    AllEmployees[0].EmployeePaid();
+                    AllEmployees[0].EmployeePaid(); 
                     AllEmployees[1].EmployeePaid();
                     AllEmployees[2].EmployeePaid();
                     AllEmployees[3].EmployeePaid();
