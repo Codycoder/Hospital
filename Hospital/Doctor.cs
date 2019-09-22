@@ -23,7 +23,6 @@ namespace Hospital
         }
         public override void EmployeePaid()
         {
-
            IfPaid = true;
         }
     }

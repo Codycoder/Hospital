@@ -8,6 +8,11 @@ namespace Hospital
     {
         EmployeeList Lists = new EmployeeList();
         Patient Levels = new Patient();
+        public void pay()
+        {
+            Lists.EmployeePaid();
+
+        }
         public void Start()
         {
             Lists.AddToList();
@@ -31,6 +36,8 @@ namespace Hospital
                 case "1":
                     {
                         Console.WriteLine("You already paid employees");
+                        Console.ReadKey();
+
                     }
                     break;
                 case "2":

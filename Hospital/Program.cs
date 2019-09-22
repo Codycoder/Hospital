@@ -9,8 +9,8 @@ namespace Hospital
             EmployeeList Lists = new EmployeeList();
             PayEmployees Pay1 = new PayEmployees();
             MainMenu menu = new MainMenu();
-            Lists.AddToList();
-            Pay1.EmployeesPaid();
+            menu.Start();
+            menu.pay();
             bool loop = true;
             while (loop)
             {

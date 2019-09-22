@@ -33,7 +33,6 @@ namespace Hospital
         }
         public override void EmployeePaid()
         {
-            Console.WriteLine("You have paid your employee!");
             IfPaid = true;
         }
     }
