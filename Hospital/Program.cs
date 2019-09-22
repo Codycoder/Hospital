@@ -6,9 +6,12 @@ namespace Hospital
     {
         public static void Main(string[] args)
         {
+            EmployeeList Lists = new EmployeeList();
+            PayEmployees Pay1 = new PayEmployees();
             MainMenu menu = new MainMenu();
+            Lists.AddToList();
+            Pay1.EmployeesPaid();
             bool loop = true;
-            menu.Start();
             while (loop)
             {
                 menu.Menu();
